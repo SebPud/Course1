@@ -20,6 +20,11 @@ public class Main {
         int a = sum(tab);
         System.out.println(a);
 
+        //Sixth loop
+        int [][] tab2 = new int [][]{{1,2,3,6,7},{3,5,7,9,3},{3,5,7,2}};
+        int b = sum2(tab2);
+        System.out.println(b);
+
 
 
     }
@@ -51,10 +56,26 @@ public class Main {
             a+=2;
         }
     }
+
     public static int sum(int[] tab){
         int sum=0;
         for (int i = 0; i <tab.length ; i++) {
             sum+=tab[i];
         }return sum;
     }
-}
+
+    public static int sum2(int [][] tab2){
+        int sum=0;
+        for (int[] otherNumbers: tab2
+             ) {
+            for (int number: otherNumbers
+                 ) {sum+= number;
+
+            }
+
+        }return sum;
+
+        }
+
+    }
+
