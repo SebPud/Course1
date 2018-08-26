@@ -13,5 +13,6 @@ public class Main {
         System.out.println(goldfish);
         System.out.println(fish);
         System.out.println(fish2);
+
     }
 }
