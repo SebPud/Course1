@@ -2,7 +2,7 @@ package Bank;
 
 public class Bank implements BankTransfer {
 
-    public final int FEE = 1;
+    private final int FEE = 1;
 
     @Override
     public void transfer(BankAccount from, BankAccount to, int amount) {
