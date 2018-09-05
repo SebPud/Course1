@@ -65,12 +65,15 @@ public class Main {
                     break;
                 }
 
-                if (value.equals(name)) {
+                else if (value.equals(name)) {
                     System.out.println(key);
                     break;
-
+                }else {
+                    System.out.println("nie ma takiej pary");
+                    break;
                 }
         }
+
 
     }
 }
