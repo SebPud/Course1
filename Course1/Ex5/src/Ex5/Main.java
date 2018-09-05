@@ -55,12 +55,10 @@ public class Main {
     public void get2Name(Map<String,String> map){
         System.out.println("Wpisz imie");
         String name = in.next();
-        String key = null;
-        String value = null;
 
         for (Map.Entry<String,String> entry : map.entrySet()) {
-                key = entry.getKey();
-                value = entry.getValue();
+                String key = entry.getKey();
+                String value = entry.getValue();
 
                 if (key.equals(name)) {
                     System.out.println(value);
